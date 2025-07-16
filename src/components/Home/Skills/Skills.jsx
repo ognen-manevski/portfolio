@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./skills.css"
 // import { programIcons, programNames } from '../../ProgramIcons/ProgramIcons';
 import ProgramIcon from '../../ProgramIcons/ProgramIcons';
@@ -56,9 +57,9 @@ function Skills() {
                                 <p>HTML, CSS, JavaScript, React.js, Tailwind CSS, Bootstrap, GSAP  </p>
                                 <span>Dev Tools:</span>
                                 <p>Vite, Git, VS Code </p>
-                                <a href="/projects?filter=web" class="btn btn-white">
+                                <Link to="/projects?filter=web" className="btn btn-white">
                                     View Web Projects
-                                </a>
+                                </Link>
                                 {/* </div> */}
                             </div>
                         </div>
@@ -87,7 +88,7 @@ function Skills() {
                                 <p>Branding, print & digital design, photo manipulation</p>
                                 <span>Tools:</span>
                                 <p>Photoshop, Illustrator, InDesign, Figma</p>
-                                <a href="/projects?filter=design" className="btn btn-white">View Design Projects</a>
+                                <Link to="/projects?filter=design" className="btn btn-white">View Design Projects</Link>
                             </div>
                         </div>
 
@@ -114,7 +115,7 @@ function Skills() {
                                 <p>Motion graphics, video editing, Lottie, ads</p>
                                 <span>Tools:</span>
                                 <p>After Effects, Premiere Pro, Animate</p>
-                                <a href="/projects?filter=video" className="btn btn-white">View Video Projects</a>
+                                <Link to="/projects?filter=video" className="btn btn-white">View Video Projects</Link>
                             </div>
                         </div>
 
@@ -142,7 +143,7 @@ function Skills() {
                                 <p>Product design, modeling, VFX</p>
                                 <span>Tools:</span>
                                 <p>SolidWorks, Cinema 4D, 3ds Max, Maya</p>
-                                <a href="/projects?filter=3d" className="btn btn-white">View 3D Projects</a>
+                                <Link to="/projects?filter=3d" className="btn btn-white">View 3D Projects</Link>
                             </div>
                         </div>
 

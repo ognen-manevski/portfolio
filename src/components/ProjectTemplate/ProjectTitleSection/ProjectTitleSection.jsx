@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import "./projectTitleSection.css"
 
 import ArrowIcon from '../../../imgs/strelka.svg?react';
@@ -82,7 +82,7 @@ function ProjectTitleSection() {
 
                     <div className=' flex flex-col justify-between gap-[1rem]'>
 
-                        <a href="/projects"
+                        <Link to="/projects"
                             className='btn back-btn
                              hover:scale-[1.1] hover-div:translateX-[-10px] transition text-[2rem] group'
                         >
@@ -90,7 +90,7 @@ function ProjectTitleSection() {
                                 <ArrowIcon />
                             </div>
                             Back To Gallery
-                        </a>
+                        </Link>
 
                         {/*buttons*/}
                         <div className='btns-div'>

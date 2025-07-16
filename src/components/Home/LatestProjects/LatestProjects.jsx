@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./latestProjects.css"
 import ProjectCard from '../../ProjectCard/ProjectCard';
 import { projects } from '../../../data/projectData';
@@ -44,10 +45,10 @@ function LatestProjects() {
 
                     {/* <!-- btn --> */}
 
-                    <a href="/projects" class="btn btn-white">
+                    <Link to="/projects" className="btn btn-white">
                         Discover More
-                        <span class="material-icons-outlined text-sm">arrow_outward</span>
-                    </a>
+                        <span className="material-icons-outlined text-sm">arrow_outward</span>
+                    </Link>
 
                 </div>
 

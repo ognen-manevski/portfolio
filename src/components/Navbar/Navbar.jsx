@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import styles from "./styles/Navbar.module.css";
 
 function Navbar() {
@@ -22,9 +23,9 @@ function Navbar() {
 
                     <div className={styles["navbar-1"]}>
 
-                        <a href="/" className={`btn ${styles["logo-main"]}`}>
+                        <Link to="/" className={`btn ${styles["logo-main"]}`}>
                             Ognen Manevski
-                        </a>
+                        </Link>
 
                         <div>
                             <HashLink smooth to="/#skills" className="btn">
@@ -38,41 +39,41 @@ function Navbar() {
 
                                     <div className={styles["nav-dropdown"]} >
 
-                                        <a href="/projects?filter=web" className="btn">
+                                        <Link to="/projects?filter=web" className="btn">
                                             Web
                                             <span className="material-symbols-outlined">
                                                 arrow_outward
                                             </span>
-                                        </a>
+                                        </Link>
 
-                                        <a href="/projects?filter=design" className="btn">
+                                        <Link to="/projects?filter=design" className="btn">
                                             Design
                                             <span className="material-symbols-outlined">
                                                 arrow_outward
                                             </span>
-                                        </a>
+                                        </Link>
 
-                                        <a href="/projects?filter=video" className="btn">
+                                        <Link to="/projects?filter=video" className="btn">
                                             Video
                                             <span className="material-symbols-outlined">
                                                 arrow_outward
                                             </span>
-                                        </a>
+                                        </Link>
 
-                                        <a href="/projects?filter=3d" className="btn">
+                                        <Link to="/projects?filter=3d" className="btn">
                                             3D
                                             <span className="material-symbols-outlined">
                                                 arrow_outward
                                             </span>
-                                        </a>
+                                        </Link>
 
                                     </div>
 
                                 </div>
 
-                                <a href="/projects" className="btn projects-btn">
+                                <Link to="/projects" className="btn projects-btn">
                                     Projects
-                                </a>
+                                </Link>
 
                             </div>
 
@@ -107,45 +108,45 @@ function Navbar() {
                                 Skills
                             </HashLink>
 
-                            <a 
-                                href="/projects" 
+                            <Link 
+                                to="/projects" 
                                 className="btn"
                                 onClick={() => setBurgerClicked(false)}
                             >
                                 Projects
-                            </a>
+                            </Link>
 
-                            <a 
-                                href="/projects?filter=web" 
+                            <Link 
+                                to="/projects?filter=web" 
                                 className="btn"
                                 onClick={() => setBurgerClicked(false)}
                             >
                                 Web
-                            </a>
+                            </Link>
 
-                            <a 
-                                href="/projects?filter=design" 
+                            <Link 
+                                to="/projects?filter=design" 
                                 className="btn"
                                 onClick={() => setBurgerClicked(false)}
                             >
                                 Design
-                            </a>
+                            </Link>
 
-                            <a 
-                                href="/projects?filter=video" 
+                            <Link 
+                                to="/projects?filter=video" 
                                 className="btn"
                                 onClick={() => setBurgerClicked(false)}
                             >
                                 Video
-                            </a>
+                            </Link>
 
-                            <a 
-                                href="/projects?filter=3d" 
+                            <Link 
+                                to="/projects?filter=3d" 
                                 className="btn"
                                 onClick={() => setBurgerClicked(false)}
                             >
                                 3D
-                            </a>
+                            </Link>
 
                             <HashLink 
                                 smooth 

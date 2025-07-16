@@ -1,3 +1,9 @@
+// Helper function to get the correct base path for images
+const getImagePath = (path) => {
+  const basePath = window.location.hostname === 'localhost' ? '' : '/portfolio';
+  return `${basePath}${path}`;
+};
+
 export const projects = [
 
   /////////////////////////////////////////////////////////
@@ -6,7 +12,7 @@ export const projects = [
   {
     slug: "masit-wordpress-redesign",
     // For card
-    thumbnail: "/imgs/projects/masit/thumbnail.jpg",
+    thumbnail: getImagePath("/imgs/projects/masit/thumbnail.jpg"),
     title: "Government Tech Association Website Redesign",
     type_id: "web",
     type: "Web & UI/UX",
@@ -125,7 +131,7 @@ The website was initially built in <strong>plain HTML and CSS</strong> based on 
   {
     slug: "roofline-react-real-estate",
     // For card
-    thumbnail: "/imgs/projects/React/thumbnail.jpg",
+    thumbnail: getImagePath("/imgs/projects/React/thumbnail.jpg"),
     title: " Real Estate Website with Animated React UI",
     type_id: "web",
     type: "Web & UI/UX",
@@ -196,7 +202,7 @@ A modern real estate web app built with React, featuring interactive UI, animate
   {
     slug: "fitzone-bootstrap-custom-site",
     // For card
-    thumbnail: "/imgs/projects/Responsive-Web-Design-With-Bootstrap5/thumbnail.jpg",
+    thumbnail: getImagePath("/imgs/projects/Responsive-Web-Design-With-Bootstrap5/thumbnail.jpg"),
     title: "Fitness Site with Custom Bootstrap & 3D Interactions",
     type_id: "web",
     type: "Web & UI/UX",
@@ -260,7 +266,7 @@ A modern real estate web app built with React, featuring interactive UI, animate
   {
     slug: "api-powered-gallery",
     // For card
-    thumbnail: "/imgs/projects/Client site development with JS/thumbnail.jpg",
+    thumbnail: getImagePath("/imgs/projects/Client site development with JS/thumbnail.jpg"),
     title: "Dynamic Media Browser Built with Pexels API",
     type_id: "web",
     type: "Web & UI/UX",
@@ -290,7 +296,7 @@ The primary goal was to create a fully functional, visually appealing photo sear
 <h4>Approach</h4>
 PixelBloom is built with plain <strong>HTML, CSS, and JavaScript</strong>, with no front-end frameworks, showcasing a solid grasp of native browser capabilities. Clean code structure and modular design patterns were followed to make the app scalable and easy to maintain.
             `,
-      image: "/imgs/projects/Client site development with JS/thumbnail.jpg",
+      image: getImagePath("/imgs/projects/Client site development with JS/thumbnail.jpg"),
       imageType: "plain" // "mockup" or "plain"
     },
     //section 1
@@ -363,7 +369,7 @@ PixelBloom is built with plain <strong>HTML, CSS, and JavaScript</strong>, with 
   {
     slug: "car-rental-wordpress-site",
     // For card
-    thumbnail: "/imgs/projects/Content_management_systems_WordPress/thumbnail.jpg",
+    thumbnail: getImagePath("/imgs/projects/Content_management_systems_WordPress/thumbnail.jpg"),
     title: "Custom WordPress Car Rental Website with WooCommerce Integration",
     type_id: "web",
     type: "Web & UI/UX",
@@ -449,7 +455,7 @@ Used <strong>WooCommerce</strong> for car listings and rental logic, extended wi
   {
     slug: "cinemax-streaming-ui",
     // For card
-    thumbnail: "/imgs/projects/Figma/thumbnail.jpg",
+    thumbnail: getImagePath("/imgs/projects/Figma/thumbnail.jpg"),
     title: "CINEMAX – Movie Streaming Platform Web Design",
     type_id: "web",
     type: "Web & UI/UX",
@@ -537,7 +543,7 @@ The design process included competitive analysis (Netflix, Disney+, etc.), wiref
   {
     slug: "jobscout-ui-design",
     // For card
-    thumbnail: "/imgs/projects/Design_Principles/thumbnail.jpg",
+    thumbnail: getImagePath("/imgs/projects/Design_Principles/thumbnail.jpg"),
     title: "JobScout - Illustrated Job Search Platform UI",
     type_id: "web",
     type: "Web & UI/UX",
@@ -577,7 +583,7 @@ The project includes a <strong>homepage, job listings page with overlay job deta
 
 </ul>
             `,
-      image: "/imgs/projects/Design_Principles/thumbnail.jpg",
+      image: getImagePath("/imgs/projects/Design_Principles/thumbnail.jpg"),
       imageType: "plain" // "mockup" or "plain"
     },
 
@@ -617,7 +623,7 @@ The project includes a <strong>homepage, job listings page with overlay job deta
   {
     slug: "edge-digital-html-css-site",
     // For card
-    thumbnail: "/imgs/projects/HTML&CSS/thumbnail.jpg",
+    thumbnail: getImagePath("/imgs/projects/HTML&CSS/thumbnail.jpg"),
     title: "Plain HTML & CSS Web Design for Digital Agency",
     type_id: "web",
     type: "Web & UI/UX",
@@ -644,7 +650,7 @@ This was a fully custom-built website for a fictional digital marketing agency, 
 <br><br>
  The aim was to create a responsive, visually compelling site that showcases modern design standards and a strong brand identity. Inspired by real-world agency layouts, the project emphasizes both form and function, with a bold landing experience, refined content structure, and clean interaction design.
 `,
-      image: "/imgs/projects/HTML&CSS/thumbnail.jpg",
+      image: getImagePath("/imgs/projects/HTML&CSS/thumbnail.jpg"),
       imageType: "plain", // "mockup" or "plain"
     },
     //section 1
@@ -701,7 +707,7 @@ This was a fully custom-built website for a fictional digital marketing agency, 
   {
     slug: "star-gate-app-ui",
     // For card
-    thumbnail: "/imgs/projects/Design_Tools/illustrator/ai.jpg",
+    thumbnail: getImagePath("/imgs/projects/Design_Tools/illustrator/ai.jpg"),
     title: "Star Gate - Gamified Astronomy App UI",
     type_id: "design",
     type: "Graphic Design",
@@ -786,7 +792,7 @@ The UI was planned using mockups and informed by competitor research. A futurist
   {
     slug: "seo-dm-case-study",
     // For card
-    thumbnail: "/imgs/projects/SEO&DM/thumbnail.jpg",
+    thumbnail: getImagePath("/imgs/projects/SEO&DM/thumbnail.jpg"),
     title: "SEO & Digital Marketing Case Study + Webshop Design",
     type_id: "web",
     type: "Web & UI/UX",
@@ -817,7 +823,7 @@ This student project was created as part of the <strong>SEO & Digital Marketing<
 </p>
 
             `,
-      image: "/imgs/projects/SEO&DM/thumbnail.jpg",
+      image: getImagePath("/imgs/projects/SEO&DM/thumbnail.jpg"),
       imageType: "plain" // "mockup" or "plain"
     },
 
@@ -878,7 +884,7 @@ A complete SEO & digital marketing case study was developed for <a href="https:/
   {
     slug: "ui-ux-fitness-app",
     // For card
-    thumbnail: "/imgs/projects/UX-UI/thumbnail.jpg",
+    thumbnail: getImagePath("/imgs/projects/UX-UI/thumbnail.jpg"),
     title: "UI/UX Case Study + Fitness App Design",
     type_id: "web",
     type: "Web & UI/UX",
@@ -914,7 +920,7 @@ A complete SEO & digital marketing case study was developed for <a href="https:/
 </p>
 
             `,
-      image: "/imgs/projects/UX-UI/thumbnail.jpg",
+      image: getImagePath("/imgs/projects/UX-UI/thumbnail.jpg"),
       imageType: "plain" // "mockup" or "plain"
     },
 
@@ -965,7 +971,7 @@ A complete SEO & digital marketing case study was developed for <a href="https:/
   {
     slug: "ecommerce-stats-dashboard",
     // For card
-    thumbnail: "/imgs/projects/Design_Tools/photoshop/psd.jpg",
+    thumbnail: getImagePath("/imgs/projects/Design_Tools/photoshop/psd.jpg"),
     title: "Ecommerce Statistics Dashboard Design",
     type_id: "design",
     type: "Graphic Design",
@@ -1007,7 +1013,7 @@ The entire design was created in <strong>Adobe Photoshop</strong> using vector s
   {
     slug: "mini-hackathon-site",
     // For card
-    thumbnail: "/imgs/projects/mini/thumbnail.jpg",
+    thumbnail: getImagePath("/imgs/projects/mini/thumbnail.jpg"),
     title: "MINI Cooper Hackathon Website",
     type_id: "web",
     type: "Web & UI/UX",
@@ -1040,7 +1046,7 @@ The entire design was created in <strong>Adobe Photoshop</strong> using vector s
   Front-end developer and <strong>visual design lead</strong>, drawing on my experience working with MINI’s brand at my agency job.
 </p>
  `,
-      image: "/imgs/projects/mini/thumbnail.jpg",
+      image: getImagePath("/imgs/projects/mini/thumbnail.jpg"),
       imageType: "plain", // "mockup" or "plain"
     },
     //section 1
