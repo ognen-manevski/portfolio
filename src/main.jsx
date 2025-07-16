@@ -12,6 +12,15 @@ import ProjectTemplate from './pages/ProjectTemplate.jsx';
 // back to top 
 import BackToTop from './components/BackToTop/BackToTop';
 
+// Determine basename based on environment
+const getBasename = () => {
+  if (import.meta.env.MODE === 'development') {
+    return '/';
+  } else {
+    return '/portfolio/';
+  }
+};
+
 const router = createBrowserRouter(
   [
     {
@@ -35,7 +44,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/portfolio/"
+    basename: getBasename()
   }
 );
 
