@@ -1,0 +1,57 @@
+.image-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    /* display: flex; */
+    z-index: 9999999;
+    animation: modal-in 0.3s ease;
+    overflow: auto;
+}
+
+@keyframes modal-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-img-wrap {
+    position: relative;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: scroll; */
+
+
+    img {
+        margin: 2rem auto;
+        width: 100%;
+        max-width: min-content;
+        height: 100%;
+        max-height: min-content ;
+    }
+}
+
+.image-modal-close {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    padding: 1.5rem;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    z-index: 2;
+
+    span {
+        font-size: 3rem;
+    }
+}
+
+/* no scroll */
+body.modal-open {
+    overflow: hidden;
+}

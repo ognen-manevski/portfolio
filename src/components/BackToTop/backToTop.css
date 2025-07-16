@@ -1,0 +1,34 @@
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+
+    button {
+        padding: 1.5rem;
+        aspect-ratio: 1/1;
+        cursor: pointer;
+
+        animation: btt-appear .3s;
+        transition: .3s;
+
+        span {
+            font-size: 3rem;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        &:hover {
+            transform: translateY(-.5rem);
+        }
+    }
+}
+
+@keyframes btt-appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

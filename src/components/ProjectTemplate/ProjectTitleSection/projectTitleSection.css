@@ -1,0 +1,48 @@
+.project-title-section {
+    padding-block: 8rem;
+    text-align: left;
+
+    .title-left {
+        padding-left: 4rem;
+        border-left: 10px solid var(--primarna);
+    }
+
+    .btns-div{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        &>*{
+            width: 100%;
+        }
+    }
+}
+
+.bg-text-project-title {
+    user-select: none;
+
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 43%);
+    font-size: clamp(4rem, 14vw, 240px);
+
+    background: linear-gradient(to left,
+            white,
+            transparent);
+    background-size: 150%;
+    background-position: center;
+    background-clip: text;
+    color: transparent;
+    opacity: .05;
+}
+
+.back-btn{
+    padding-left: 0;
+}
+
+.arrow-to-gallery{
+    width: 40px;
+    svg{
+        width: 100%;
+    }
+}

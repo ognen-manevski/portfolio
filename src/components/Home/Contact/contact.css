@@ -1,0 +1,217 @@
+.contact-me {
+
+    padding-block: 10rem;
+    overflow: hidden;
+
+    .bottom-blue {
+        position: absolute;
+        bottom: 0;
+        background: var(--primarna-5);
+        width: 100%;
+        height: 30%;
+        border-radius: 100% 100% 0 0;
+        filter: blur(clamp(100px, 10vw, 300px));
+        transform: translateY(80%);
+    }
+
+    .contact-wrap {
+        display: flex;
+        justify-content: center;
+        gap: 16rem;
+    }
+
+    .left {
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+
+        text-align: left;
+
+
+        h2 {
+            margin-bottom: 2rem;
+        }
+
+        >p {
+            color: var(--siva0);
+            margin-bottom: 4rem;
+        }
+    }
+
+    .right {
+        max-width: 420px;
+        width: 100%;
+    }
+}
+
+.socials-grid {
+    width: min-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 4rem;
+
+
+    .socials-icon-w {
+        width: 160px;
+        /* height: 200px; */
+        padding: 2rem;
+        /* mix-blend-mode: lighten; */
+    }
+
+    .socials-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+
+        svg {
+            flex-shrink: 0;
+            margin-top: 1.6rem;
+            width: 36px;
+            height: 36px;
+        }
+
+        .btn {
+            flex-shrink: 0;
+        }
+    }
+
+
+}
+
+.attach-submit {
+    color: var(--siva0);
+
+    & .btn:hover {
+        color: var(--primarna);
+
+        svg {
+            transform: translateX(1rem);
+        }
+    }
+
+    .label-attach {
+        padding-left: 0px;
+        margin-top: .5rem;
+    }
+
+    .send-btn {
+        color: var(--bela);
+        font-size: 3rem;
+        padding: 1rem;
+        padding-right: 0px;
+        transition: .3s;
+    }
+}
+
+
+
+.contact-me-form {
+
+
+    .email-wrap {
+        min-height: 4rem;
+    }
+
+    .textarea-wrap {
+        height: 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .email-input,
+    .textarea-input {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: 1.8rem 2rem;
+        height: 100%;
+        z-index: 4;
+        width: 100%;
+        height: 100%;
+
+        background: linear-gradient(
+            -45deg,
+            var(--primarna) -600%
+            , transparent 60%
+        );
+
+
+    }
+
+
+    .text-transparent {
+        position: absolute;
+        bottom: 1rem;
+        left: 2rem;
+        z-index: 4;
+        font-size: 17rem;
+        line-height: 15rem;
+        font-weight: 600;
+        color: transparent;
+
+        background: linear-gradient(to left,
+                white,
+                transparent);
+        background-size: 150%;
+        background-position: center;
+        background-clip: text;
+        color: transparent;
+        opacity: .05;
+
+        user-select: none;
+    }
+
+
+
+}
+
+/*form */
+.alert {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert p {
+    margin: 0;
+    font-weight: 500;
+}
+
+
+.send-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

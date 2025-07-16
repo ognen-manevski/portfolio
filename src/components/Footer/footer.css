@@ -1,0 +1,46 @@
+footer {
+    background: var(--crna);
+
+    padding-block: 6rem;
+
+    p {
+        color: var(--siva0);
+    }
+
+    h3 {
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 6rem;
+
+        margin-bottom: 4rem;
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        @media (max-width: 500px) {
+            text-align: center;
+            flex-direction: column;
+            gap: 4rem;
+            align-items: center;
+
+            nav {
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+    }
+
+    .copy {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}

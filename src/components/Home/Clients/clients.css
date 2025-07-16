@@ -1,0 +1,64 @@
+.clients-section {
+    padding-block: 8rem;
+
+    /* background:
+        linear-gradient(var(--siva-6),
+            hsl(from var(--siva-6) h s l / .5),
+            hsl(from var(--siva-6) h s l / .5),
+            var(--siva-6)),
+        url('../../../imgs/bg-lines.png');
+
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply; */
+
+    h2 {
+        margin-bottom: 4rem;
+    }
+}
+
+.cleints-gap-bg {
+    background: radial-gradient(at bottom, var(--primarna-8) -50%, var(--crna) 100%);
+
+    padding-block: 4rem;
+}
+
+.carousel-track {
+
+    animation: scroll 30s linear infinite;
+    will-change: transform;
+
+
+    a {
+        padding: 1rem;
+    }
+
+    a img {
+        background-position: center;
+        background-size: contain;
+        filter: brightness(0) saturate(100%) invert(63%) sepia(8%) saturate(558%) hue-rotate(155deg) brightness(92%) contrast(88%);
+    }
+
+    a:hover {
+        img {
+            filter: brightness(0) saturate(100%) invert(53%) sepia(99%) saturate(2877%) hue-rotate(172deg) brightness(102%) contrast(101%);
+        }
+    }
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-25%);
+    }
+}
+
+
+.carousel-track:hover,
+.carousel-track:focus-within .carousel-track {
+    animation-play-state: paused;
+}

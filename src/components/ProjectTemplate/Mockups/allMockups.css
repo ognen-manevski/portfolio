@@ -1,0 +1,197 @@
+/* defaults  */
+
+.mockup-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.mockup-base {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.mockup-img {
+    transform: translateY(0%);
+    /* animation: phone-mockup both; */
+    /* animation-timeline: scroll(); */
+}
+
+@keyframes phone-mockup {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-19%);
+    }
+}
+
+@keyframes mockup-popup {
+    from {
+        transform: translateY(50%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+
+/* PHONE */
+
+.phone-mockup-wrapper {
+    position: relative;
+    height: min-content;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    transform: translateY(0%);
+    /* animation: mockup-popup both; */
+    /* animation-timeline: scroll(); */
+}
+
+/* PC */
+.pc-mockup-wrapper {
+    position: relative;
+    width: 100%;
+    height: min-content;
+    max-width: 300px;
+    z-index: 1;
+    transform: translateY(0%);
+}
+
+/* laptop */
+.laptop-mockup-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    z-index: 2;
+    max-width: 300px;
+    /* transform: translateY(30px); */
+    margin-bottom: -25%;
+    filter: drop-shadow(0 0 40px var(--crna));
+    transform: translateY(0%);
+}
+
+
+/* images w. transforms  */
+
+.mockup-phone-img {
+    position: absolute;
+    inset: 0;
+    /* overflow: hidden; */
+    transform:
+        /*transl*/
+        translateX(3%) translateY(-7%)
+        /*rotate*/
+        rotateY(28deg) rotateX(8.5deg) rotateZ(-6deg)
+        /*skew*/
+        skewX(0deg) skewY(6deg)
+        /*scale*/
+        scale(.74);
+}
+
+.mockup-pc-img {
+    position: absolute;
+    inset: 0;
+    /* overflow: hidden; */
+    transform:
+        /*transl*/
+        translateX(-6.6%) translateY(16%)
+        /*rotate*/
+        rotateY(-40deg) rotateX(10deg) rotateZ(0deg)
+        /*skew*/
+        skewX(4deg) skewY(-3deg)
+        /*scale*/
+        scale(1.14);
+}
+
+.mockup-laptop-img {
+    position: absolute;
+    inset: 0;
+    /* overflow: hidden; */
+    transform:
+        /*transl*/
+        translateX(0%) translateY(9%)
+        /*scale*/
+        scale(1);
+}
+
+
+/* masks  */
+.phone-mask {
+    mask-image: url('/imgs/projects/!mockups/phone/phone-mask-min.png');
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url('/imgs/projects/!mockups/phone/phone-mask-min.png');
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.pc-mask {
+    mask-image: url('/imgs/projects/!mockups/pc/pc-mask-min.png');
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url('/imgs/projects/!mockups/pc/pc-mask-min.png');
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.laptop-mask {
+    mask-image: url('/imgs/projects/!mockups/laptop/laptop-mask-min.png');
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url('/imgs/projects/!mockups/laptop/laptop-mask-min.png');
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+}
+
+
+/* sweepws */
+.phone-sweep {
+    position: absolute;
+    inset: 0;
+    background-image: url("/imgs/projects/!mockups/phone/phone-sweep-min.png");
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 3;
+    opacity: .1;
+}
+
+.pc-sweep {
+    position: absolute;
+    inset: 0;
+    background-image: url("/imgs/projects/!mockups/pc/pc-sweep-min.png");
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 3;
+    opacity: .1;
+}
+
+.laptop-sweep {
+    position: absolute;
+    inset: 0;
+    background-image: url("/imgs/projects/!mockups/laptop/laptop-sweep-min.png");
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 3;
+    opacity: .1;
+}
