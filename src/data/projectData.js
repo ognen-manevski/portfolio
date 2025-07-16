@@ -48,7 +48,7 @@ The website was initially built in <strong>plain HTML and CSS</strong> based on 
 
 
             `,
-      image: "/imgs/projects/masit/pc.png",
+      image: getImagePath("/imgs/projects/masit/pc.png"),
       imageType: "mockup" // "mockup" or "plain"
     },
     //section 1
@@ -67,59 +67,59 @@ The website was initially built in <strong>plain HTML and CSS</strong> based on 
 
 </ul>
             `,
-      image: "/imgs/projects/masit/mobile.png",
+      image: getImagePath("/imgs/projects/masit/mobile.png"),
       imageType: "mockup"
     },
     madeUsing: ["wp", "html", "css", "js", "figma", "ae"],
     galleryImages: [
       {
         id: 1,
-        src: "/imgs/projects/masit/Home-Masit.png",
+        src: getImagePath("/imgs/projects/masit/Home-Masit.png"),
         title: "Home Page Design"
       },
       {
         id: 2,
-        src: "/imgs/projects/masit/chlenki",
+        src: getImagePath("/imgs/projects/masit/chlenki.png"),
         title: "Membership Page"
       },
       {
         id: 3,
-        src: "/imgs/projects/masit/kontakt.png",
+        src: getImagePath("/imgs/projects/masit/kontakt.png"),
         title: "Contact Page Design"
       },
       {
         id: 4,
-        src: "/imgs/projects/masit/partneri.png",
+        src: getImagePath("/imgs/projects/masit/partneri.png"),
         title: "Partners Page"
       },
       {
         id: 5,
-        src: "/imgs/projects/masit/patron-partneri.png",
+        src: getImagePath("/imgs/projects/masit/patron-partneri.png"),
         title: "Patron Partners Page"
       },
       {
         id: 6,
-        src: "/imgs/projects/masit/proekti.png",
+        src: getImagePath("/imgs/projects/masit/proekti.png"),
         title: "Projects Page"
       },
       {
         id: 7,
-        src: "/imgs/projects/masit/regulativa.png",
+        src: getImagePath("/imgs/projects/masit/regulativa.png"),
         title: "MASIT Regulations"
       },
       {
         id: 8,
-        src: "/imgs/projects/masit/stani-chlen.png",
+        src: getImagePath("/imgs/projects/masit/stani-chlen.png"),
         title: "Become a Member"
       },
       {
         id: 9,
-        src: "/imgs/projects/masit/tela.png",
+        src: getImagePath("/imgs/projects/masit/tela.png"),
         title: "Representatives"
       },
       {
         id: 10,
-        src: "/imgs/projects/masit/zis.png",
+        src: getImagePath("/imgs/projects/masit/zis.png"),
         title: "Services for ZIS"
       },
     ]
@@ -157,7 +157,7 @@ The website was initially built in <strong>plain HTML and CSS</strong> based on 
 A modern real estate web app built with React, featuring interactive UI, animated components, and dynamic listing filters. The project emphasizes a clean visual structure and high user engagement through advanced animations.
 </p>
 `,
-      image: "/imgs/projects/React/pc.jpg",
+      image: getImagePath("/imgs/projects/React/pc.jpg"),
       imageType: "mockup" // "mockup" or "plain"
     },
     //section 1
@@ -173,24 +173,24 @@ A modern real estate web app built with React, featuring interactive UI, animate
   <li><strong>Fully responsive layout:</strong> Ensures consistent usability and aesthetics across devices.</li>
 </ul>
             `,
-      image: "/imgs/projects/React/mobile.jpg",
+      image: getImagePath("/imgs/projects/React/mobile.jpg"),
       imageType: "mockup"
     },
     madeUsing: ["react", "vite", "gsap"],
     galleryImages: [
       {
         id: 1,
-        src: "/imgs/projects/React/Homepage.jpg",
+        src: getImagePath("/imgs/projects/React/Homepage.jpg"),
         title: "Home Page Design"
       },
       {
         id: 2,
-        src: "/imgs/projects/React/Listings.jpg",
+        src: getImagePath("/imgs/projects/React/Listings.jpg"),
         title: "Property Listings + Search & Filter"
       },
       {
         id: 3,
-        src: "/imgs/projects/React/About us.jpg",
+        src: getImagePath("/imgs/projects/React/About us.jpg"),
         title: "About Us Page Design",
       }
     ]
@@ -233,7 +233,7 @@ A modern real estate web app built with React, featuring interactive UI, animate
   <a href="https://spline.design" target="_blank" rel="noopener noreferrer"><strong>Spline</strong></a> and embedded into the layout.
 </p>
 `,
-      image: "/imgs/projects/Responsive-Web-Design-With-Bootstrap5/mockup-pc.jpg",
+      image: getImagePath("/imgs/projects/Responsive-Web-Design-With-Bootstrap5/mockup-pc.jpg"),
       imageType: "mockup" // "mockup" or "plain"
     },
     //section 1
@@ -247,14 +247,14 @@ A modern real estate web app built with React, featuring interactive UI, animate
   <li><strong>Other sections:</strong> Feature highlights, coaches carousel, pricing plans, and "Why Us" showcase for credibility.</li>
 </ul>
             `,
-      image: "/imgs/projects/Responsive-Web-Design-With-Bootstrap5/mobile.jpg",
+      image: getImagePath("/imgs/projects/Responsive-Web-Design-With-Bootstrap5/mobile.jpg"),
       imageType: "mockup"
     },
     madeUsing: ["bs", "vite", "css"],
     galleryImages: [
       {
         id: 1,
-        src: "/imgs/projects/Responsive-Web-Design-With-Bootstrap5/home.png",
+        src: getImagePath("/imgs/projects/Responsive-Web-Design-With-Bootstrap5/home.png"),
         title: "Home Page Design"
       },
     ]
@@ -330,34 +330,34 @@ PixelBloom is built with plain <strong>HTML, CSS, and JavaScript</strong>, with 
   </li>
 </ul>
             `,
-      image: "/imgs/projects/Client site development with JS/phone-mockup.png",
+      image: getImagePath("/imgs/projects/Client site development with JS/phone-mockup.png"),
       imageType: "mockup"
     },
     madeUsing: ["html", "css", "js"],
     galleryImages: [
       {
         id: 1,
-        src: "/imgs/projects/Client site development with JS/home.png",
+        src: getImagePath("/imgs/projects/Client site development with JS/home.png"),
         title: "Home Page Design"
       },
       {
         id: 2,
-        src: "/imgs/projects/Client site development with JS/images-search.png",
+        src: getImagePath("/imgs/projects/Client site development with JS/images-search.png"),
         title: "Images Search"
       },
       {
         id: 3,
-        src: "/imgs/projects/Client site development with JS/photo-modal.png",
+        src: getImagePath("/imgs/projects/Client site development with JS/photo-modal.png"),
         title: "Photo Modal",
       },
       {
         id: 4,
-        src: "/imgs/projects/Client site development with JS/collections.png",
+        src: getImagePath("/imgs/projects/Client site development with JS/collections.png"),
         title: "Collections Page",
       },
       {
         id: 5,
-        src: "/imgs/projects/Client site development with JS/collection-view.png",
+        src: getImagePath("/imgs/projects/Client site development with JS/collection-view.png"),
         title: "Collections Preview Page",
       }
     ]
@@ -391,7 +391,7 @@ A custom car rental website using <strong>WordPress, Elementor, Astra</strong>, 
 Used <strong>WooCommerce</strong> for car listings and rental logic, extended with plugins and <strong>custom hooks</strong>. Added custom sections for driver booking, search, filtering, and pricing using <strong>Contact Form 7</strong>, CSS, JS, and PHP.
 
             `,
-      image: "/imgs/projects/Content_management_systems_WordPress/pc.jpg",
+      image: getImagePath("/imgs/projects/Content_management_systems_WordPress/pc.jpg"),
       imageType: "mockup" // "mockup" or "plain"
     },
     //section 1
@@ -410,7 +410,7 @@ Used <strong>WooCommerce</strong> for car listings and rental logic, extended wi
 
 </ul>
             `,
-      image: "/imgs/projects/Content_management_systems_WordPress/mobile.png",
+      image: getImagePath("/imgs/projects/Content_management_systems_WordPress/mobile.png"),
       imageType: "mockup"
     },
     madeUsing: ["wp", "html", "css", "js"],
@@ -423,27 +423,27 @@ Used <strong>WooCommerce</strong> for car listings and rental logic, extended wi
       },
       {
         id: 2,
-        src: "/imgs/projects/Content_management_systems_WordPress/homepage.png",
+        src: getImagePath("/imgs/projects/Content_management_systems_WordPress/homepage.png"),
         title: "Home Page Design"
       },
       {
         id: 3,
-        src: "/imgs/projects/Content_management_systems_WordPress/about-us.png",
+        src: getImagePath("/imgs/projects/Content_management_systems_WordPress/about-us.png"),
         title: "About Us Page Design"
       },
       {
         id: 4,
-        src: "/imgs/projects/Content_management_systems_WordPress/contact.png",
+        src: getImagePath("/imgs/projects/Content_management_systems_WordPress/contact.png"),
         title: "Contact Page Design"
       },
       {
         id: 5,
-        src: "/imgs/projects/Content_management_systems_WordPress/catalog.png",
+        src: getImagePath("/imgs/projects/Content_management_systems_WordPress/catalog.png"),
         title: "Products Catalog"
       },
       {
         id: 6,
-        src: "/imgs/projects/Content_management_systems_WordPress/product.png",
+        src: getImagePath("/imgs/projects/Content_management_systems_WordPress/product.png"),
         title: "Products Page Design"
       },
     ]
@@ -484,7 +484,7 @@ To build a platform that feels immersive and engaging through the use of <strong
 The design process included competitive analysis (Netflix, Disney+, etc.), wireframing core pages, and building a consistent visual system. The homepage features animated elements like floating popcorn and clouds, with bold calls to action and responsive layout strategies.
 
             `,
-      image: "/imgs/projects/Figma/PC-Home.png",
+      image: getImagePath("/imgs/projects/Figma/PC-Home.png"),
       imageType: "mockup" // "mockup" or "plain"
     },
 
@@ -503,7 +503,7 @@ The design process included competitive analysis (Netflix, Disney+, etc.), wiref
   <li><strong>Custom illustrations</strong> and <strong>motion effects</strong> made entirely in Figma</li>
 </ul>
             `,
-      image: "/imgs/projects/Figma/PC-Home.png",
+      image: getImagePath("/imgs/projects/Figma/PC-Home.png"),
       imageType: "mockup" // "mockup" or "plain"
     },
 
@@ -511,27 +511,27 @@ The design process included competitive analysis (Netflix, Disney+, etc.), wiref
     galleryImages: [
       {
         id: 1,
-        src: "/imgs/projects/Figma/PC-Home.png",
+        src: getImagePath("/imgs/projects/Figma/PC-Home.png"),
         title: "Home Page Design"
       },
       {
         id: 2,
-        src: "/imgs/projects/Figma/PC-browse.png",
+        src: getImagePath("/imgs/projects/Figma/PC-browse.png"),
         title: "Browse Movies"
       },
       {
         id: 3,
-        src: "/imgs/projects/Figma/PC-movie view.png",
+        src: getImagePath("/imgs/projects/Figma/PC-movie view.png"),
         title: "Movie View"
       },
       {
         id: 4,
-        src: "/imgs/projects/Figma/PC-log-in.png",
+        src: getImagePath("/imgs/projects/Figma/PC-log-in.png"),
         title: "Login Page"
       },
       {
         id: 5,
-        src: "/imgs/projects/Figma/PC-subscription.png",
+        src: getImagePath("/imgs/projects/Figma/PC-subscription.png"),
         title: "Subscription Page"
       },
     ]
@@ -591,27 +591,27 @@ The project includes a <strong>homepage, job listings page with overlay job deta
     galleryImages: [
       {
         id: 1,
-        src: "/imgs/projects/Design_Principles/Homepage.png",
+        src: getImagePath("/imgs/projects/Design_Principles/Homepage.png"),
         title: "Home Page Design"
       },
       {
         id: 2,
-        src: "/imgs/projects/Design_Principles/Search.png",
+        src: getImagePath("/imgs/projects/Design_Principles/Search.png"),
         title: "Search Page Design"
       },
       {
         id: 3,
-        src: "/imgs/projects/Design_Principles/job details modal.png",
+        src: getImagePath("/imgs/projects/Design_Principles/job details modal.png"),
         title: "Job Details Modal"
       },
       {
         id: 4,
-        src: "/imgs/projects/Design_Principles/SSO-Login.png",
+        src: getImagePath("/imgs/projects/Design_Principles/SSO-Login.png"),
         title: "Login / SSO Page"
       },
       {
         id: 5,
-        src: "/imgs/projects/Design_Principles/Chat.png",
+        src: getImagePath("/imgs/projects/Design_Principles/Chat.png"),
         title: "Chat UI"
       },
     ]
@@ -678,24 +678,24 @@ This was a fully custom-built website for a fictional digital marketing agency, 
   </li>
 </ul>
             `,
-      image: "/imgs/projects/HTML&CSS/mobile.jpg",
+      image: getImagePath("/imgs/projects/HTML&CSS/mobile.jpg"),
       imageType: "mockup",
     },
 
     galleryImages: [
       {
         id: 1,
-        src: "/imgs/projects/HTML&CSS/homepage.png",
+        src: getImagePath("/imgs/projects/HTML&CSS/homepage.png"),
         title: "Home Page Design"
       },
       {
         id: 2,
-        src: "/imgs/projects/HTML&CSS/careers.png",
+        src: getImagePath("/imgs/projects/HTML&CSS/careers.png"),
         title: "Careers Page"
       },
       {
         id: 3,
-        src: "/imgs/projects/HTML&CSS/team.png",
+        src: getImagePath("/imgs/projects/HTML&CSS/team.png"),
         title: "Our Team Page",
       },
     ]
@@ -729,7 +729,7 @@ The goal was to design an app that helps users explore celestial objects, comple
 The UI was planned using mockups and informed by competitor research. A futuristic design system was developed using fonts like <strong>Orbitron</strong> and dark-space palettes with vibrant highlights. Every screen—from the <strong>landing page</strong> to the <strong>calendar</strong> and <strong>user profile</strong>—was custom-illustrated in Illustrator and aligned to a consistent design language.
 
             `,
-      image: "/imgs/projects/Design_Tools/illustrator/ai.jpg",
+      image: getImagePath("/imgs/projects/Design_Tools/illustrator/ai.jpg"),
       imageType: "plain" // "mockup" or "plain"
     },
     //section 2
@@ -747,7 +747,7 @@ The UI was planned using mockups and informed by competitor research. A futurist
 </ul>
 
             `,
-      image: "/imgs/projects/Design_Tools/illustrator/1-landing.jpg",
+      image: getImagePath("/imgs/projects/Design_Tools/illustrator/1-landing.jpg"),
       imageType: "mockup" // "mockup" or "plain"
     },
 
@@ -755,32 +755,32 @@ The UI was planned using mockups and informed by competitor research. A futurist
     galleryImages: [
       {
         id: 1,
-        src: "/imgs/projects/Design_Tools/illustrator/1-landing.jpg",
+        src: getImagePath("/imgs/projects/Design_Tools/illustrator/1-landing.jpg"),
         title: "Landing Page"
       },
       {
         id: 2,
-        src: "/imgs/projects/Design_Tools/illustrator/2-explore.jpg",
+        src: getImagePath("/imgs/projects/Design_Tools/illustrator/2-explore.jpg"),
         title: "Explore Section"
       },
       {
         id: 3,
-        src: "/imgs/projects/Design_Tools/illustrator/3-learning.jpg",
+        src: getImagePath("/imgs/projects/Design_Tools/illustrator/3-learning.jpg"),
         title: "Learning Page"
       },
       {
         id: 4,
-        src: "/imgs/projects/Design_Tools/illustrator/4-calendar.jpg",
+        src: getImagePath("/imgs/projects/Design_Tools/illustrator/4-calendar.jpg"),
         title: "Calendar View"
       },
       {
         id: 5,
-        src: "/imgs/projects/Design_Tools/illustrator/5-profile-settings.jpg",
+        src: getImagePath("/imgs/projects/Design_Tools/illustrator/5-profile-settings.jpg"),
         title: "Profile Settings"
       },
       {
         id: 6,
-        src: "/imgs/projects/Design_Tools/illustrator/design system_en.jpg",
+        src: getImagePath("/imgs/projects/Design_Tools/illustrator/design system_en.jpg"),
         title: "Design System"
       },
     ]
@@ -854,7 +854,7 @@ A complete SEO & digital marketing case study was developed for <a href="https:/
   <li>Cross-sell and upsell modules for better conversion</li>
 </ul>
             `,
-      image: "/imgs/projects/SEO&DM/mobile.jpg",
+      image: getImagePath("/imgs/projects/SEO&DM/mobile.jpg"),
       imageType: "mockup" // "mockup" or "plain"
     },
 
@@ -862,17 +862,17 @@ A complete SEO & digital marketing case study was developed for <a href="https:/
     galleryImages: [
       {
         id: 1,
-        src: "/imgs/projects/SEO&DM/web-store.png",
+        src: getImagePath("/imgs/projects/SEO&DM/web-store.png"),
         title: "Web-Store Design"
       },
       {
         id: 2,
-        src: "/imgs/projects/SEO&DM/product.png",
+        src: getImagePath("/imgs/projects/SEO&DM/product.png"),
         title: "Product Page"
       },
       {
         id: 3,
-        src: "/imgs/projects/SEO&DM/case study.png",
+        src: getImagePath("/imgs/projects/SEO&DM/case study.png"),
         title: "Case Study"
       },
     ]
@@ -940,7 +940,7 @@ A complete SEO & digital marketing case study was developed for <a href="https:/
   <li><strong>App Features:</strong> Daily plan overview, daily workouts, warm-up, meal prep, nutrition tracking, and extensive libraries for exercises and recipes</li>
 </ul>
             `,
-      image: "/imgs/projects/UX-UI/mobile.png",
+      image: getImagePath("/imgs/projects/UX-UI/mobile.png"),
       imageType: "mockup", // "mockup" or "plain"
       mockup_settings: "full", // "full" or not set for scroll/default
     },
@@ -949,17 +949,17 @@ A complete SEO & digital marketing case study was developed for <a href="https:/
     galleryImages: [
       {
         id: 1,
-        src: "/imgs/projects/UX-UI/onboarding.jpg",
+        src: getImagePath("/imgs/projects/UX-UI/onboarding.jpg"),
         title: "Onboarding App Screens"
       },
       {
         id: 2,
-        src: "/imgs/projects/UX-UI/app.jpg",
+        src: getImagePath("/imgs/projects/UX-UI/app.jpg"),
         title: "App Screens and Features"
       },
       {
         id: 3,
-        src: "/imgs/projects/UX-UI/case-study.png",
+        src: getImagePath("/imgs/projects/UX-UI/case-study.png"),
         title: "Case Study"
       },
     ]
@@ -993,7 +993,7 @@ The goal was to design a clear and user-friendly <strong>ecommerce dashboard</st
 The entire design was created in <strong>Adobe Photoshop</strong> using vector shapes, grid layouts, color-coded data, and iconography to maintain clarity and structure.
 
             `,
-      image: "/imgs/projects/Design_Tools/photoshop/psd.jpg",
+      image: getImagePath("/imgs/projects/Design_Tools/photoshop/psd.jpg"),
       imageType: "plain" // "mockup" or "plain"
     },
 
@@ -1001,7 +1001,7 @@ The entire design was created in <strong>Adobe Photoshop</strong> using vector s
     galleryImages: [
       {
         id: 1,
-        src: "/imgs/projects/Design_Tools/photoshop/photoshop.jpg",
+        src: getImagePath("/imgs/projects/Design_Tools/photoshop/photoshop.jpg"),
         title: "Dashboard Design"
       },
     ]
@@ -1070,24 +1070,24 @@ The entire design was created in <strong>Adobe Photoshop</strong> using vector s
 
 
             `,
-      image: "/imgs/projects/mini/mobile.jpg",
+      image: getImagePath("/imgs/projects/mini/mobile.jpg"),
       imageType: "mockup",
     },
 
     galleryImages: [
       {
         id: 1,
-        src: "/imgs/projects/mini/home.jpg",
+        src: getImagePath("/imgs/projects/mini/home.jpg"),
         title: "Home Page Design"
       },
       {
         id: 2,
-        src: "/imgs/projects/mini/scrollable.jpg",
+        src: getImagePath("/imgs/projects/mini/scrollable.jpg"),
         title: "Scrollable Animated Section"
       },
       {
         id: 3,
-        src: "/imgs/projects/mini/color-picker.jpg",
+        src: getImagePath("/imgs/projects/mini/color-picker.jpg"),
         title: "Color Picker",
       },
     ]
